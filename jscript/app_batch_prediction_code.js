@@ -141,7 +141,7 @@ async function model_processArray(array) {
 			$("#prediction-list").empty();
 			
 			// 'await' is very important here.
-			await model_makePrediction(fname);
+			// await model_makePrediction(fname);
 		}
 		
 		file = item;
