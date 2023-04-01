@@ -38,8 +38,9 @@ $(function () {
             document.getElementById('loader').style.display = "none";
             document.getElementById('prediction-list').innerHTML = "";
             for (var i = 0; i < 3; i++) {
-                document.getElementById('prediction-list').innerHTML += `<li class="w3-text-blue fname-font" style="list-style-type:none;">${diseases[randomDiseases[i]]} is ${probabilities[i]}</li>`
+                document.getElementById('prediction-list').innerHTML += `<li class="w3-text-blue fname-font" style="list-style-type:none;"><h4>${diseases[randomDiseases[i]]} : ${probabilities[i]}</h4></li>`
             }
+            
         }, 1000);
         
     });
